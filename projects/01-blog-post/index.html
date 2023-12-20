@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Template</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div>
@@ -20,117 +21,118 @@
                     <li>Contact</li>
                 </ul>
             </nav>
-            <section>
+            <section class="slider">
                 <!-- Step 2.1: Create a div for the container of the introductory part -->
-                <div>
-                    <h1>Front-end</h1> <!-- Step 2.2: Inside the div, create a heading for the title of the blog. "Front-end" -->
+                <div class="content">
+                    <h2>Front-end</h2> <!-- Step 2.2: Inside the div, create a heading for the title of the blog. "Front-end" -->
                     <p>Dive into the world of web development, as this resource sets you on the path to becoming a web design virtuoso!</p> <!-- Step 2.3: Inside the div, create a paragraph for the description. You can put this as the paragraph: Dive into the world of web development, as this resource sets you on the path to becoming a web design virtuoso!-->
                 </div>
             </section>
         </header>
 
-        <main>
-            <div id="blog"> <!-- Created a div to contain the "blog" -->
-                <article id="posts"> <!-- Created an article element for "posts" to group the individual blog posts -->
-                    <div id="post"> <!-- Created individual divs for the  "post" -->
-                        <div id="post-image"> <!-- Inside each post div, create a div for the "post-image" -->
+        <main class="main-content">
+            <div class="blog"> <!-- Created a div to contain the "blog" -->
+                <article class="posts"> <!-- Created an article element for "posts" to group the individual blog posts -->
+                    <div class="post"> <!-- Created individual divs for the  "post" -->
+                        <div class="post-image"> <!-- Inside each post div, create a div for the "post-image" -->
                             <img src="images/img1.avif" alt="Unveiling the Blueprint of the Web Image"> <!-- Created an img element with the appropriate src and alt attributes for the post image -->
                         </div>
                     
-                        <div id="post-content"> <!-- Inside each post div is a "post-content" to contain the post title, info, and summary -->
+                        <div class="post-content"> <!-- Inside each post div is a "post-content" to contain the post title, info, and summary -->
                         
-                            <a id="post-title">Unveiling the Blueprint - Mastering HTML Document Structure</a> <!-- Inside the post-content div is a created anchor tag for the "post-title" -->
+                            <a class="post-title">Unveiling the Blueprint - Mastering HTML Document Structure</a> <!-- Inside the post-content div is a created anchor tag for the "post-title" -->
                         
-                            <p id="post-info">Posted on November 13, 2023 by AWSCC-DSWD</p> <!-- Inside the post-content div is a created paragraph for the "post-info" -->
+                            <p class="post-info">Posted on November 13, 2023 by AWSCC-DSWD</p> <!-- Inside the post-content div is a created paragraph for the "post-info" -->
                         
-                            <p id="post-summary"> <!-- Inside the post-content div is a created paragraph for the  "post-summary" --> Imagine you're about to embark on a journey to build your dream house. What's the first thing you need? A solid blueprint, right? Well, welcome to the world of web development, where your canvas is a blank web page, and your blueprint is the HTML document structure.
+                            <p class="post-summary"> <!-- Inside the post-content div is a created paragraph for the  "post-summary" --> Imagine you're about to embark on a journey to build your dream house. What's the first thing you need? A solid blueprint, right? Well, welcome to the world of web development, where your canvas is a blank web page, and your blueprint is the HTML document structure.
                             </p>
                         </div>
                     </div>
                 
                     <!-- Step 4.1: Using the instructions above, create 2 more blog post with the details:  -->
 
-                    <div id="post"> <!-- Include the following in this div for post: images/img2.jpeg, Mastering the Art: Creating Interactive Web Experiences, Posted on November 12, 2023 by AWSCC-DSWD, Explore the art of creating contact forms, surveys, and more. Understand how to collect user data, validate inputs, and enhance the user experience. From simple text inputs to radio buttons and dropdown menus, we'll cover it all in this exciting journey into web forms.  -->
-                        <div id="post-image">
+                    <div class="post"> <!-- Include the following in this div for post: images/img2.jpeg, Mastering the Art: Creating Interactive Web Experiences, Posted on November 12, 2023 by AWSCC-DSWD, Explore the art of creating contact forms, surveys, and more. Understand how to collect user data, validate inputs, and enhance the user experience. From simple text inputs to radio buttons and dropdown menus, we'll cover it all in this exciting journey into web forms.  -->
+                        <div class="post-image">
                             <img src="images/img2.jpeg" alt="Mastering the Art: Creating Interactive Web Experiences">
                         </div>
 
-                        <div id="post-content">
-                            <a id="post-title">Mastering the Art: Creating Interactive Web Experiences</a>
-                            <p id="post-info">Posted on November 12, 2023 by AWSCC-DSWD</p>
-                            <p id="post-summary">Explore the art of creating contact forms, surveys, and more. Understand how to collect user data, validate inputs, and enhance the user experience. From simple text inputs to radio buttons and dropdown menus, we'll cover it all in this exciting journey into web forms.</p>
+                        <div class="post-content">
+                            <a class="post-title">Mastering the Art: Creating Interactive Web Experiences</a>
+                            <p class="post-info">Posted on November 12, 2023 by AWSCC-DSWD</p>
+                            <p class="post-summary">Explore the art of creating contact forms, surveys, and more. Understand how to collect user data, validate inputs, and enhance the user experience. From simple text inputs to radio buttons and dropdown menus, we'll cover it all in this exciting journey into web forms.</p>
                         </div>
                     </div>
 
-                    <div id="post"> <!-- Include the following in this div for post: images/img3.jpeg, Revolutionize Web Design: Crafting Dynamic Layouts, Posted on November 11, 2023 by AWSCC-DSWD, Unlock the magic of CSS Flexbox and transform your web layout! Say goodbye to the days of complex grids and welcome the simplicity and flexibility of Flexbox. Learn how to create responsive and dynamic layouts that adapt effortlessly to different screen sizes. -->
-                        <div id="post-image">
+                    <div class="post"> <!-- Include the following in this div for post: images/img3.jpeg, Revolutionize Web Design: Crafting Dynamic Layouts, Posted on November 11, 2023 by AWSCC-DSWD, Unlock the magic of CSS Flexbox and transform your web layout! Say goodbye to the days of complex grids and welcome the simplicity and flexibility of Flexbox. Learn how to create responsive and dynamic layouts that adapt effortlessly to different screen sizes. -->
+                        <div class="post-image">
                             <img src="images/img3.jpeg" alt="Revolutionize Web Design: Crafting Dynamic Layouts">
                         </div>
 
-                        <div id="post-content">
-                            <a id="post-title">Revolutionize Web Design: Crafting Dynamic Layouts</a>
-                            <p id="post-info">Posted on November 11, 2023 by AWSCC-DSWD</p>
-                            <p id="post-summary">Unlock the magic of CSS Flexbox and transform your web layout! Say goodbye to the days of complex grids and welcome the simplicity and flexibility of Flexbox. Learn how to create responsive and dynamic layouts that adapt effortlessly to different screen sizes.</p>
+                        <div class="post-content">
+                            <a class="post-title">Revolutionize Web Design: Crafting Dynamic Layouts</a>
+                            <p class="post-info">Posted on November 11, 2023 by AWSCC-DSWD</p>
+                            <p class="post-summary">Unlock the magic of CSS Flexbox and transform your web layout! Say goodbye to the days of complex grids and welcome the simplicity and flexibility of Flexbox. Learn how to create responsive and dynamic layouts that adapt effortlessly to different screen sizes.</p>
                         </div>
                     </div>
                 </article>
             </div>
 
             
-            <aside id="sidebar"> <!-- Inside the main is a semantic element for "sidebar" -->
+            <aside class="sidebar"> <!-- Inside the main is a semantic element for "sidebar" -->
                 <!-- Step 5: Inside the aside section, create two divs, one for popular-posts, and one for social-side -->
-                <div id="popular-posts-side"> <!-- div for "popular-posts-side" -->
+                <div class="popular-posts-side"> <!-- div for "popular-posts-side" -->
                     <h2>POPULAR POSTS</h2><!-- Create a subheading:  POPULAR POSTS -->
                     <!-- Under this subheading, create another div for "popular-posts", this will put all of the popular posts div into one div-->
-                    <div id="popular-posts"> 
-                        <div id="popular-post"> <!-- Inside the popular posts div, create a div for the "popular-post" -->
-                            <div id="popular-post-image"> <!-- Inside the popular post div, create a div for the "popular-post-image": images/posts/post1.jpg -->
+                    <div class="popular-posts"> 
+                        <div class="popular-post"> <!-- Inside the popular posts div, create a div for the "popular-post" -->
+                            <div class="popular-post-image"> <!-- Inside the popular post div, create a div for the "popular-post-image": images/posts/post1.jpg -->
                                 <img src="images/posts/post1.jpg" alt="Interesing HTML tags">
                             </div>
-                            <div id="popular-post-content">   <!-- Inside the popular post div, create a div for the "popular-post-content" -->
-                                <a id="popular-post-title">Interesing HTML tags</a> <!-- Inside the popular post content div, create an anchor tag for the "popular-post-title": Interesting HTML tags  -->
-                                <p id="popular-post-desc">I am going to show you the top 9 interesting HTML...</p> <!-- Inside the popular post content div, create a paragraph for the "popular-post-desc": I am going to show you the top 9 interesting HTML... -->
+                            <div class="popular-post-content">   <!-- Inside the popular post div, create a div for the "popular-post-content" -->
+                                <a class="popular-post-title">Interesing HTML tags</a> <!-- Inside the popular post content div, create an anchor tag for the "popular-post-title": Interesting HTML tags  -->
+                                <p class="popular-post-desc">I am going to show you the top 9 interesting HTML...</p> <!-- Inside the popular post content div, create a paragraph for the "popular-post-desc": I am going to show you the top 9 interesting HTML... -->
                             </div>
                         </div>
                     
                         <!-- Using the instructions above, create 3 more popular posts with the details:  -->
 
-                        <div id="popular-post"> <!-- div for "popular-post" -->
-                        <!-- Inside this div, include the following: images/posts/post2.png, Unleash the Potential of Lists, HTML lists are a powerful tool for organizing...  -->
-                            <div id="popular-post-image">
+                        <div class="popular-post"> <!-- div for "popular-post" -->
+                            <!-- Inside this div, include the following: images/posts/post2.png, Unleash the Potential of Lists, HTML lists are a powerful tool for organizing...  -->
+                            <div class="popular-post-image">
                                 <img src="images/posts/post2.png" alt="Unleash the Potential of Lists">
                             </div>
-                            <div id="popular-post-content">
-                                <a id="popular-post-title">Unleash the Potential of Lists</a>
-                                <p id="popular-post-desc">HTML lists are a powerful tool for organizing...</p>
+                            <div class="popular-post-content">
+                                <a class="popular-post-title">Unleash the Potential of Lists</a>
+                                <p class="popular-post-desc">HTML lists are a powerful tool for organizing...</p>
                             </div>
                         </div>
                     
 
-                        <div id="popular-post"> <!-- div for "popular-post"-->
-                        <!-- Inside this div, include the following: images/posts/post3.webp, Master HTML in 24 Mins, Learn HTML & CSS right from the basics...  -->
-                            <div id="popular-post-image">
+                        <div class="popular-post"> <!-- div for "popular-post"-->
+                            <!-- Inside this div, include the following: images/posts/post3.webp, Master HTML in 24 Mins, Learn HTML & CSS right from the basics...  -->
+                            <div class="popular-post-image">
                                 <img src="images/posts/post3.webp" alt="Master HTML in 24 Mins">
                             </div>
-                            <div id="popular-post-content">
-                                <a id="popular-post-title">HTML in 24 Mins</a>
-                                <p id="popular-post-desc">Learn HTML & CSS right from the basics...</p>
+                            <div class="popular-post-content">
+                                <a class="popular-post-title">HTML in 24 Mins</a>
+                                <p class="popular-post-desc">Learn HTML & CSS right from the basics...</p>
                             </div>
                         </div>
 
-                        <div id="popular-post"> <!-- div for "popular-post" -->
+                        <div class="popular-post"> <!-- div for "popular-post" -->
                             <!-- Inside this div, include the following: images/posts/post4.png, The state of a checkbox, I was in the middle of creating a small web...  -->
-                            <div id="popular-post-image">
+                            <div class="popular-post-image">
                                 <img src="images/posts/post4.png" alt="The state of a checkbox">
                             </div>
-                            <div id="popular-post-content">
-                                <a id="popular-post-title">The state of a checkbox</a>
-                                <p id="popular-post-desc">I was in the middle of creating a small web...</p>
+                            <div class="popular-post-content">
+                                <a class="popular-post-title">The state of a checkbox</a>
+                                <p class="popular-post-desc">I was in the middle of creating a small web...</p>
                             </div>
                         </div>
+                    </div>
                 </div>
 
-                <div id="social-side"> <!-- div for "social-side" -->
+                <div class="social-side"> <!-- div for "social-side" -->
                     <h2>FOLLOW US</h2><!-- create a subheading:  FOLLOW US -->
                     <div> <!-- under this subheading, create another div for social media links, this will put all of the social media links into one div-->
                     <a href="https://www.facebook.com/"><img src="images/social/facebook.png" alt="facebook"></a> <!-- Inside the social media links div, add the picture from the folder of socials and create an anchor tag for the Facebook link: https://www.facebook.com/ -->
@@ -142,32 +144,34 @@
             </aside>
         </main>
 
-        <footer>
-            <!-- Step 6: Inside the footer section, create a div for the "footerBoxes" -->
-            <div id="footerBoxes">
-                <div id="footerBox"> <!-- Inside the footerBoxes div, create a div for the "footerBox" -->
-                    <h3>Privacy Policy</h3> <!-- Inside the footerBox div, create an h3:  Privacy Policy -->
-                    <hr> <!-- Add an hr for a line -->
-                    <!-- Inside the footerBox div, create a paragraph:  We are committed to protecting your privacy. We will only use the information we collect about you lawfully (in accordance with the Data Protection Act 1998). Please read on if you wish to learn more about our privacy policy. --> 
-                    <p>We are committed to protecting your privacy. We will only use the information we collect about you lawfully (in accordance with the Data Protection Act 1998). Please read on if you wish to learn more about our privacy policy.</p>
-                </div>
-                <!-- Using the instructions above, create 2 more footer boxes with the details: Terms of Service - Our Service allows you to post, link, store, share, and otherwise make available certain information, text, graphics, videos, or other material. You are responsible for the Content posted on the Service.
-                Help & Support - If you have any questions or need assistance, our support team is here to help. Contact us via email or visit our help center for answers to frequently asked questions. -->
-                <div id="footerBox">
-                    <h3>Terms of Service</h3>
-                    <hr>
-                    <p>Our Service allows you to post, link, store, share, and otherwise make available certain information, text, graphics, videos, or other material. You are responsible for the Content posted on the Service.</p>
-                </div>
+        <div class="container">
+            <footer>
+                <!-- Step 6: Inside the footer section, create a div for the "footerBoxes" -->
+                <div class="footerBoxes">
+                    <div class="footerBox"> <!-- Inside the footerBoxes div, create a div for the "footerBox" -->
+                        <h3>Privacy Policy</h3> <!-- Inside the footerBox div, create an h3:  Privacy Policy -->
+                        <hr><!-- Add an hr for a line -->
+                        <!-- Inside the footerBox div, create a paragraph:  We are committed to protecting your privacy. We will only use the information we collect about you lawfully (in accordance with the Data Protection Act 1998). Please read on if you wish to learn more about our privacy policy. --> 
+                        <p>We are committed to protecting your privacy. We will only use the information we collect about you lawfully (in accordance with the Data Protection Act 1998). Please read on if you wish to learn more about our privacy policy.</p>
+                    </div>
+                    <!-- Using the instructions above, create 2 more footer boxes with the details: Terms of Service - Our Service allows you to post, link, store, share, and otherwise make available certain information, text, graphics, videos, or other material. You are responsible for the Content posted on the Service.
+                    Help & Support - If you have any questions or need assistance, our support team is here to help. Contact us via email or visit our help center for answers to frequently asked questions. -->
+                    <div class="footerBox">
+                        <h3>Terms of Service</h3>
+                        <hr>
+                        <p>Our Service allows you to post, link, store, share, and otherwise make available certain information, text, graphics, videos, or other material. You are responsible for the Content posted on the Service.</p>
+                    </div>
 
-                <div id="footerBox">
-                    <h3>Help & Support</h3>
-                    <hr>
-                    <p>If you have any questions or need assistance, our support team is here to help. Contact us via email or visit our help center for answers to frequently asked questions.</p>
+                    <div class="footerBox">
+                        <h3>Help & Support</h3>
+                        <hr>
+                        <p>If you have any questions or need assistance, our support team is here to help. Contact us via email or visit our help center for answers to frequently asked questions.</p>
+                    </div>
                 </div>
-            </div>
-            <hr> <!-- Add an hr for a line "splitter"-->
-            <p>2023 Blog Structure</p> <!-- Add a paragraph for the "copy-right" -->
-        </footer>
+                <hr class="splitter"> <!-- Add an hr for a line "splitter"-->
+                <p class="copy-right">2023 Blog Structure</p> <!-- Add a paragraph for the "copy-right" -->
+            </footer>
+        </div>
     </div>
 </body>
 </html>
