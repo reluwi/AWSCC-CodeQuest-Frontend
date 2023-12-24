@@ -412,6 +412,10 @@ li:nth-child(6) .progress-bar::before { width: 50%; }
     border-radius: 8px;
     margin-bottom: 10px;
 }
+
+.work-item img:hover{
+    transform: scale(1.8);
+}
   
 .work-item h3 {
     font-size: 20px;
