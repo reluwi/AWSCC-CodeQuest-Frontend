@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Guessing Game</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="frontPage">
+            <h1>Guessing Game</h1>
+            <button id="playButton" onclick="showDifficultyButtons()">Play</button>
+            <div id="difficultyButtons">
+                <p>Select Difficulty:</p>
+                <button class="difficultyButton" onclick="startGame('beginner')">Beginner</button>
+                <button class="difficultyButton" onclick="startGame('intermediate')">Intermediate</button>
+                <button class="difficultyButton" onclick="startGame('hardcore')">Hardcore</button>
+            </div>
+        </div>
+
+        <div id="gamePage">
+            <h1>Guess a number between <span id="minRange"></span> and <span id="maxRange"></span>:</h1>
+
+            <div class="input-container">
+                <input type="number" id="userGuess" min="1" max="500" onkeydown="if(event.keyCode==13) checkGuess()">
+                <button onclick="checkGuess()">Submit Guess
+                    <span class="enter-text">(Press ENTER)</span>
+                </button>
+            </div>
+            
+            <div id="error"></div>
+            <div id="feedback"></div>
+
+            <div id="playAgain" style="display: none;">
+                <p>Do you want to play again?</p>
+                <button onclick="resetGame()">Yes</button>
+                <button onclick="endGame()">No</button>
+            </div>
+        </div>
+
+        <script src="index.js"></script>
+
+    </body>
+</html>

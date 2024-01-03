@@ -1,0 +1,89 @@
+body {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    text-shadow: 2px 2px 2px gray;
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle, rgba(231,201,161,1) 0%, rgba(139,128,108,1) 100%);
+}
+
+h1 {
+    font-size: 36px;
+}
+
+#frontPage {
+    display: block;
+    margin: 280px auto;
+}
+
+#gamePage {
+    display: none;
+    margin: 280px auto;
+}
+
+#playButton {
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+#playButton:hover {
+    background-color: black;
+    color: antiquewhite;
+}
+
+#difficultyButtons {
+    display: none;
+    margin-top: 20px;
+}
+
+.difficultyButton {
+    font-size: 16px;
+    margin: 0 10px;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.difficultyButton:hover {
+    background-color: black;
+    color: antiquewhite;
+}
+
+.input-container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+.enter-text {
+    font-size: 12px;
+    color: gray;
+    margin-left: 5px;
+}
+
+#feedback {
+    margin-top: 20px;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+#error {
+    color: red;
+    margin-top: 10px;
+}
+
+#playAgain {
+    margin-top: 20px;
+}
